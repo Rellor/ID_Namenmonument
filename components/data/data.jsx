@@ -12,7 +12,7 @@ const DataBody = () => {
         .selectAll("text")
         .data(text)
         .enter()
-        .append("text")
+        .append("div")
         .style("fill", "black")
         .attr("class", "mainText")
         .text(function (d) {
