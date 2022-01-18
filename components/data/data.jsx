@@ -9,7 +9,10 @@ const DataBody = () => {
     (div) => {
       if (!text) return;
       div
-        .selectAll("text")
+        .append("div")
+        .attr("id", "nameDiv")
+        .text("Namen:")
+        .selectAll("#nameDiv")
         .data(text)
         .enter()
         .append("div")
@@ -17,6 +20,48 @@ const DataBody = () => {
         .attr("class", "mainText")
         .text(function (d) {
           return d.prs_naam;
+        });
+
+      div
+        .append("div")
+        .attr("id", "geslachtDiv")
+        .text("Geslacht:")
+        .selectAll("#geslachtDiv")
+        .data(text)
+        .enter()
+        .append("div")
+        .style("fill", "black")
+        .attr("class", "mainText")
+        .text(function (d) {
+          return d.prs_geslacht;
+        });
+
+      div
+        .append("div")
+        .attr("id", "leeftijdDiv")
+        .text("Ingeschreven:")
+        .selectAll("#leeftijdDiv")
+        .data(text)
+        .enter()
+        .append("div")
+        .style("fill", "black")
+        .attr("class", "mainText")
+        .text(function (d) {
+          return d.prs_leeftijd;
+        });
+
+      div
+        .append("div")
+        .attr("id", "ingeschrevenDiv")
+        .text("Ingeschreven:")
+        .selectAll("#ingeschrevenDiv")
+        .data(text)
+        .enter()
+        .append("div")
+        .style("fill", "black")
+        .attr("class", "mainText")
+        .text(function (d) {
+          return d.ove_datum_inschrijving;
         });
     },
     [text]
@@ -28,9 +73,9 @@ const DataBody = () => {
       ref={ref}
       style={{
         height: 500,
-        width: "100%",
         marginRight: "0px",
         marginLeft: "0px",
+        display: "flex",
       }}
     ></div>
   );
