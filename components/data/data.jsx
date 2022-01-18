@@ -3,15 +3,26 @@ import KanyeContext from "../provider/provider";
 import useD3 from "../../hooks/useD3";
 
 const DataBody = () => {
-  const { data } = React.useContext(KanyeContext);
+  const { text } = React.useContext(KanyeContext);
 
-  const ref = useD3((text) => {
-    if (!data) return;
+  const ref = useD3(
+    (div) => {
+      if (!text) return;
+      div
+        .selectAll("text")
+        .data(text)
+        .enter()
+        .append("text")
+        .style("fill", "black")
+        .attr("class", "mainText")
+        .text(function (d) {
+          return d.prs_naam;
+        });
+    },
+    [text]
+  );
 
-    text.append("text").attr("class", "myLabel"); //easy to style with CSS
-  });
-
-  if (!data) return null;
+  if (!text) return null;
   return (
     <div
       ref={ref}
