@@ -13,7 +13,7 @@ const DataBody = () => {
 
       div
         .append("div")
-        .attr("class", "nameDiv infoDiv")
+        .attr("className", "nameDiv infoDiv")
         .text("Namen:")
         .selectAll(".nameDiv")
         .data(text)
@@ -27,7 +27,7 @@ const DataBody = () => {
 
       div
         .append("div")
-        .attr("class", "geslachtDiv infoDiv")
+        .attr("className", "geslachtDiv infoDiv")
         .text("Geslacht:")
         .selectAll(".geslachtDiv")
         .data(text)
@@ -41,7 +41,7 @@ const DataBody = () => {
 
       div
         .append("div")
-        .attr("class", "leeftijdDiv infoDiv")
+        .attr("className", "leeftijdDiv infoDiv")
         .text("leeftijd:")
         .selectAll(".leeftijdDiv")
         .data(text)
@@ -54,7 +54,7 @@ const DataBody = () => {
 
       div
         .append("div")
-        .attr("class", "ingeschrevenDiv infoDiv")
+        .attr("className", "ingeschrevenDiv infoDiv")
         .text("Ingeschreven:")
         .selectAll(".ingeschrevenDiv")
         .data(text)
@@ -68,7 +68,7 @@ const DataBody = () => {
 
       div
         .append("div")
-        .attr("class", "eigenaarDiv infoDivLast")
+        .attr("className", "eigenaarDiv infoDivLast")
         .text("eigenaar:")
         .selectAll(".eigenaarDiv")
         .data(text)

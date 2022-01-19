@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <KanyeProvider>
       {" "}
-      <div class="se-pre-con"></div>
       <div className={styles.container}>
         <Head>
           <title>Namenmonument Tropenmuseum</title>
