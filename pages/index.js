@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import HomeBody from "../components/home/home";
 import DataBody from "../components/data/data";
 import styles from "../styles/Home.module.css";
 import { KanyeProvider } from "../components/provider/provider";
@@ -8,6 +6,8 @@ import { KanyeProvider } from "../components/provider/provider";
 export default function Home() {
   return (
     <KanyeProvider>
+      {" "}
+      <div class="se-pre-con"></div>
       <div className={styles.container}>
         <Head>
           <title>Namenmonument Tropenmuseum</title>

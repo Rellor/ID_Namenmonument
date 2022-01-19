@@ -3,66 +3,94 @@ import KanyeContext from "../provider/provider";
 import useD3 from "../../hooks/useD3";
 
 const DataBody = () => {
-  const { text } = React.useContext(KanyeContext);
+  const { text, searched, setSearched } = React.useContext(KanyeContext);
 
   const ref = useD3(
     (div) => {
       if (!text) return;
+
+      div.selectAll("div").remove();
+
       div
         .append("div")
-        .attr("id", "nameDiv")
+        .attr("class", "nameDiv infoDiv")
         .text("Namen:")
-        .selectAll("#nameDiv")
+        .selectAll(".nameDiv")
         .data(text)
         .enter()
         .append("div")
-        .style("fill", "black")
-        .attr("class", "mainText")
+        .attr("className", "mainText")
         .text(function (d) {
           return d.prs_naam;
-        });
+        })
+        .exit();
 
       div
         .append("div")
-        .attr("id", "geslachtDiv")
+        .attr("class", "geslachtDiv infoDiv")
         .text("Geslacht:")
-        .selectAll("#geslachtDiv")
+        .selectAll(".geslachtDiv")
         .data(text)
         .enter()
         .append("div")
-        .style("fill", "black")
-        .attr("class", "mainText")
+        .attr("className", "mainText")
         .text(function (d) {
           return d.prs_geslacht;
-        });
+        })
+        .exit();
 
       div
         .append("div")
-        .attr("id", "leeftijdDiv")
-        .text("Ingeschreven:")
-        .selectAll("#leeftijdDiv")
+        .attr("class", "leeftijdDiv infoDiv")
+        .text("leeftijd:")
+        .selectAll(".leeftijdDiv")
         .data(text)
         .enter()
         .append("div")
-        .style("fill", "black")
-        .attr("class", "mainText")
+        .attr("className", "mainText")
         .text(function (d) {
           return d.prs_leeftijd;
         });
 
       div
         .append("div")
-        .attr("id", "ingeschrevenDiv")
+        .attr("class", "ingeschrevenDiv infoDiv")
         .text("Ingeschreven:")
-        .selectAll("#ingeschrevenDiv")
+        .selectAll(".ingeschrevenDiv")
         .data(text)
         .enter()
         .append("div")
-        .style("fill", "black")
-        .attr("class", "mainText")
+        .attr("className", "mainText")
         .text(function (d) {
           return d.ove_datum_inschrijving;
-        });
+        })
+        .exit();
+
+      div
+        .append("div")
+        .attr("class", "eigenaarDiv infoDivLast")
+        .text("eigenaar:")
+        .selectAll(".eigenaarDiv")
+        .data(text)
+        .enter()
+        .append("div")
+        .attr("className", "mainText")
+        .text(function (d) {
+          return d.ove_eigenaar;
+        })
+        .exit();
+
+      div.selectAll("#searchBar").on("input", searchFunction);
+
+      function searchFunction() {
+        console.log("input veranderd");
+        console.log(this.value);
+        setSearched(!searched);
+        //test voor font size
+        // .selectAll("div")
+        // .select("div")
+        // .style("font-size", this.value + "px");
+      }
     },
     [text]
   );
@@ -77,7 +105,14 @@ const DataBody = () => {
         marginLeft: "0px",
         display: "flex",
       }}
-    ></div>
+    >
+      <input
+        type="text"
+        name="searchBar"
+        id="searchBar"
+        placeholder="Vul hier een naam in!"
+      />
+    </div>
   );
 };
 
