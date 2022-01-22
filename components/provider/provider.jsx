@@ -19,11 +19,14 @@ export const KanyeProvider = ({ children }) => {
     console.log("data and checked:", data, searched);
     if (!data) return;
     setText(
-      data.NT00461_SLAVENREGISTERS_NIEUWE_.filter((d) =>
-        searched
-          ? d.prs_naam == document.getElementById("searchBar").value
-          : true
-      ).map((d) => ({ ...d }))
+      data.NT00461_SLAVENREGISTERS_NIEUWE_.filter((d) => {
+        let input =
+          document.getElementById("searchBar") &&
+          document.getElementById("searchBar").value
+            ? document.getElementById("searchBar").value
+            : "";
+        return d.prs_naam.toLowerCase().indexOf(input.toLowerCase()) !== -1;
+      }).map((d) => ({ ...d }))
     );
   }, [data, searched]);
 
