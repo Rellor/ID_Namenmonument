@@ -16,22 +16,20 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <div className="h-1 w-full z-100 absolute inset-0 z-50">
+        <div className="h-1 w-full absolute inset-0 z-0">
           <header className="relative m-auto text-center">
-            <div className="flex p-8 z-100 bg-white w-9/12 h-24 m-auto">
+            <div className="flex p-8 bg-white w-9/12 h-24 m-auto">
               <div className="mr-auto">
                 <Image
                   className="w-24"
-                  src="/filler.png"
+                  src="/logo.svg"
                   alt="Picture of the author"
-                  width="200"
-                  height="100"
+                  width="100"
+                  height="50"
                 />
               </div>
               <Link href="/">
-                <a className="text-2xl text-tropen-rood font-medium">
-                  Voorbeeld
-                </a>
+                <a className="text-2xl text-tropen-rood font-medium">Home</a>
               </Link>
             </div>
           </header>

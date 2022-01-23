@@ -99,6 +99,7 @@ const DataBody = () => {
   return (
     <div
       ref={ref}
+      className="pt-32"
       style={{
         height: 500,
         marginRight: "0px",
@@ -107,6 +108,7 @@ const DataBody = () => {
       }}
     >
       <input
+        className="absolute top-36"
         type="text"
         name="searchBar"
         id="searchBar"
