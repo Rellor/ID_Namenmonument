@@ -7,10 +7,12 @@ const Index2 = () => (
       <header className="relative m-auto text-center">
         <div className="flex p-8 z-100 bg-white w-9/12 h-24 m-auto">
           <div className="mr-auto">
-            <img
+            <Image
               className="w-24"
-              src="https://www.tropenmuseum.nl/themes/custom/tropenmuseum_maintheme/logo.svg"
-              alt="logo tropenmuseum"
+              src="/logo.svg"
+              alt="Picture of the author"
+              width="100"
+              height="50"
             />
           </div>
           <Link href="/search">
@@ -46,7 +48,15 @@ const Index2 = () => (
         </p>
       </div>
       <div className="w-2/5 pl-4">
-        <img src="https://dummyimage.com/16:9x1080/" />
+        <div className="mr-auto">
+          <Image
+            className="w-24"
+            src="/filler.png"
+            alt="Picture of the author"
+            width="1920"
+            height="1080"
+          />
+        </div>
       </div>
     </div>
 
@@ -68,14 +78,26 @@ const Index2 = () => (
             </p>
           </div>
           <div className="w-1/2">
-            <img src="https://dummyimage.com/16:9x1080/" />
+            <Image
+              className="w-24"
+              src="/filler.png"
+              alt="Picture of the author"
+              width="1920"
+              height="1080"
+            />
           </div>
         </div>
 
         {/* stukje foto links */}
         <div className="w-full flex pt-4">
           <div className="w-1/2">
-            <img src="https://dummyimage.com/16:9x1080/" />
+            <Image
+              className="w-24"
+              src="/filler.png"
+              alt="Picture of the author"
+              width="1920"
+              height="1080"
+            />
           </div>
           <div className="w-1/2 px-6">
             <h2 className="text-2xl font-bold">Scherm 2</h2>
@@ -106,7 +128,13 @@ const Index2 = () => (
             </p>
           </div>
           <div className="w-1/2">
-            <img src="https://dummyimage.com/16:9x1080/" />
+            <Image
+              className="w-24"
+              src="/filler.png"
+              alt="Picture of the author"
+              width="1920"
+              height="1080"
+            />
           </div>
         </div>
       </div>
@@ -115,7 +143,7 @@ const Index2 = () => (
         <div className="m-auto w-1/2 p-4 pt-24">
           <div className="w-full">
             <h2 className="text-2xl font-bold">Links</h2>
-            <p>
+            <p className="pt-4">
               Hier zijn alle links te vinden naar de locaties van onze schetsen,
               code en inspiratie.
             </p>
@@ -125,27 +153,36 @@ const Index2 = () => (
               className="px-2"
               href="https://github.com/Rellor/ID_Namenmonument"
             >
-              <img
+              <Image
                 className="w-12"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"
+                src="/github.png"
+                alt="Picture of the author"
+                width="1500"
+                height="1500"
               />
             </a>
             <a
               className="px-2"
               href="https://www.figma.com/file/OChXVlMBfiRqMGEc56rUUY/Namenmonument-werkbestand"
             >
-              <img
+              <Image
                 className="w-12"
-                src="https://cmm.nl/wp-content/uploads/2021/05/a558b426cb8973523f37bbed94cf0f09.png"
+                src="/figma.png"
+                alt="Picture of the author"
+                width="1500"
+                height="1500"
               />
             </a>
             <a
               className="px-2"
               href="https://miro.com/app/board/uXjVObENVjc=/?invite_link_id=244899130024"
             >
-              <img
+              <Image
                 className="w-12"
-                src="https://www.freelogovectors.net/wp-content/uploads/2021/12/mirologo-freelogovectors.net_.png"
+                src="/miro.png"
+                alt="Picture of the author"
+                width="1500"
+                height="1500"
               />
             </a>
           </div>

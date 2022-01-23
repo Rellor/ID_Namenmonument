@@ -3,6 +3,7 @@ import DataBody from "../components/data/data";
 import styles from "../styles/Home.module.css";
 import { KanyeProvider } from "../components/provider/provider";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -19,10 +20,12 @@ export default function Home() {
           <header className="relative m-auto text-center">
             <div className="flex p-8 z-100 bg-white w-9/12 h-24 m-auto">
               <div className="mr-auto">
-                <img
+                <Image
                   className="w-24"
-                  src="https://www.tropenmuseum.nl/themes/custom/tropenmuseum_maintheme/logo.svg"
-                  alt="logo tropenmuseum"
+                  src="/filler.png"
+                  alt="Picture of the author"
+                  width="200"
+                  height="100"
                 />
               </div>
               <Link href="/">
