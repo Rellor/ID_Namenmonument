@@ -3,7 +3,8 @@ import KanyeContext from "../provider/provider";
 import useD3 from "../../hooks/useD3";
 
 const DataBody = () => {
-  const { text, searched, setSearched } = React.useContext(KanyeContext);
+  const { text, searched, setSearched, setChecked, checked } =
+    React.useContext(KanyeContext);
 
   const ref = useD3(
     (div) => {
@@ -95,6 +96,10 @@ const DataBody = () => {
     [text]
   );
 
+  const onChange = () => {
+    setChecked(!checked);
+  };
+
   if (!text) return null;
   return (
     <div
@@ -113,6 +118,13 @@ const DataBody = () => {
         name="searchBar"
         id="searchBar"
         placeholder="Vul hier een naam in!"
+      />
+      <input
+        type="checkbox"
+        name="f1"
+        className="checkbox check1"
+        onChange={onChange}
+        checked={checked}
       />
     </div>
   );

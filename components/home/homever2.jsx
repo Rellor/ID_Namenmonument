@@ -22,7 +22,7 @@ const Index2 = () => (
       </header>
     </div>
     {/* Titel en namen */}
-    <div className="relative text-white h-128 w-full bg-[url('https://static.wixstatic.com/media/fa0117_285bcc23916542d29d45ae0b402f6a90~mv2.gif/v1/fill/w_280,h_155,q_90/fa0117_285bcc23916542d29d45ae0b402f6a90~mv2.gif')]">
+    <div className="relative text-white h-128 w-full bg-cover bg-norepeat bg-bottom bg-[url('https://wallpapercave.com/wp/wp2729921.gif')]">
       <h1 className="text-tropen-rood bg-white p-2 left-14 bottom-28 absolute text-4xl text-center font-bold">
         Namenmonument tropenmuseum
       </h1>
@@ -33,7 +33,7 @@ const Index2 = () => (
 
     {/* Intro project en uitleg */}
     <div className="w-full mt-4 flex">
-      <div className="w-3/5 p-14 bg-tropen-rood">
+      <div className="w-6/12 p-14 bg-tropen-rood">
         <h3 className="text-2xl text-white font-medium pb-5">
           Introductie titel
         </h3>
@@ -50,8 +50,8 @@ const Index2 = () => (
       <div className="w-2/5 pl-4">
         <div className="mr-auto">
           <Image
-            className="w-24"
-            src="/filler.png"
+            className="w-24 drop-shadow-md"
+            src="/Banner.png"
             alt="Picture of the author"
             width="1920"
             height="1080"
@@ -64,8 +64,8 @@ const Index2 = () => (
     <div className="w-full flex">
       <div className="w-3/5">
         {/* Stukje foto rechts */}
-        <div className="w-full flex pt-4">
-          <div className="w-1/2 pr-6">
+        <div className="w-full flex pt-4 pt-4">
+          <div className="w-1/2 px-4">
             <h2 className="text-2xl font-bold">Scherm 1</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -79,8 +79,8 @@ const Index2 = () => (
           </div>
           <div className="w-1/2">
             <Image
-              className="w-24"
-              src="/filler.png"
+              className="w-24 drop-shadow-md"
+              src="/Scherm1.png"
               alt="Picture of the author"
               width="1920"
               height="1080"
@@ -93,7 +93,7 @@ const Index2 = () => (
           <div className="w-1/2">
             <Image
               className="w-24"
-              src="/filler.png"
+              src="/Scherm2.png"
               alt="Picture of the author"
               width="1920"
               height="1080"
@@ -114,7 +114,7 @@ const Index2 = () => (
         </div>
 
         {/* Stukje foto rechts */}
-        <div className="w-full flex pt-4">
+        <div className="w-full flex pt-4 px-4">
           <div className="w-1/2 pr-6">
             <h2 className="text-2xl font-bold">Scherm 3</h2>
             <p>
@@ -130,7 +130,7 @@ const Index2 = () => (
           <div className="w-1/2">
             <Image
               className="w-24"
-              src="/filler.png"
+              src="/Scherm3.png"
               alt="Picture of the author"
               width="1920"
               height="1080"
