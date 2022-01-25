@@ -2,8 +2,7 @@ import Head from "next/head";
 import DataBody from "../components/data/data";
 import styles from "../styles/Home.module.css";
 import { KanyeProvider } from "../components/provider/provider";
-import Link from "next/link";
-import Image from "next/image";
+import Header from "../components/main/nav";
 
 export default function Home() {
   return (
@@ -24,24 +23,7 @@ export default function Home() {
           ></link>
         </Head>
 
-        <div className="h-1 w-full absolute inset-0 z-0">
-          <header className="relative m-auto text-center">
-            <div className="flex p-8 bg-white w-9/12 h-24 m-auto">
-              <div className="mr-auto">
-                <Image
-                  className="w-24"
-                  src="/logo.svg"
-                  alt="Picture of the author"
-                  width="100"
-                  height="50"
-                />
-              </div>
-              <Link href="/">
-                <a className="text-2xl text-tropen-rood font-medium">Home</a>
-              </Link>
-            </div>
-          </header>
-        </div>
+        <Header />
         <main className={styles.main}>
           {/* <HomeBody /> */}
           <DataBody />
