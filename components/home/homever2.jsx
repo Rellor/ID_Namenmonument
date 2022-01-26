@@ -59,7 +59,7 @@ const Index2 = () => (
           </video>
           <div className="mt-4 bg-project-donker">
             <Image
-              src="/banner.png"
+              src="/Banner.png"
               alt="Picture of the author"
               width="1920"
               height="1080"
