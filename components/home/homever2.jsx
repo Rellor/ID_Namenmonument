@@ -19,7 +19,7 @@ const Index2 = () => (
     {/* Intro project en uitleg */}
     <div className="w-full mt-4 flex">
       <div className="w-7/12 p-14 bg-tropen-rood">
-        <h3 className="text-2xl text-white font-medium pb-5">Het project</h3>
+        <h3 className="text-2xl text-white font-bold pb-5">Het project</h3>
         <p className="text-white">
           Het tropenmuseum vindt het belangrijk dat bezoekers van het museum
           meer ontdekken over diverse culturen van de wereld en de menselijke
@@ -57,33 +57,95 @@ const Index2 = () => (
           <video loop width="1920" height="1080" controls>
             <source src="/interactiefscherm.mp4" />
           </video>
-          <div className="align-bottom flex mt-2">
-            <video loop width="1920" height="1080" controls>
-              <source src="/Eindprototype.mov" />
-            </video>
+          <div className="mt-4 bg-project-donker">
+            <Image
+              src="/banner.png"
+              alt="Picture of the author"
+              width="1920"
+              height="1080"
+            />
           </div>
         </div>
       </div>
     </div>
 
+    {/* project uitleg */}
+    <div className="w-full mt-8 flex">
+      <div className="w-2/3 m-auto">
+        <div className="w-full m-auto">
+          <h2 className="text-2xl font-bold pb-4">De oplossing</h2>
+          <div className="flex">
+            <p>
+              Wat wij uiteindelijk hebben gemaakt is{" "}
+              <b>Ontmoet: het verleden</b>, een interactieve museum ervaring
+              waarbij de gebruiker het verleden van de VOC kan ontdekken via
+              persoonlijke verhalen van mensen die tot slaaf gemaakt waren.
+            </p>
+            <p>
+              Met <b>Ontmoet: het verleden</b> kan je de persoonlijke informatie
+              van tot slaaf gemaakte mensen bekijken en de complete schaal van
+              de slaven handel van de VOC bekijken door in-en-uit te zoomen,
+              filteren en de persoonlijke geschiedenis van deze mensen te lezen.
+            </p>
+          </div>
+
+          <div className="align-bottom flex my-8">
+            <video loop width="1920" height="1080" controls>
+              <source src="/Eindprototype.mov" />
+            </video>
+          </div>
+
+          <h2 className="text-2xl font-bold pb-4 mb-4">Uitleg concept</h2>
+          <p>
+            In de installatie kan er in en uit gezoomd worden op de data
+            waardoor de verhoudingen van de hoeveelheid tot slaaf gemaakte
+            mensen goed zichtbaar wordt.
+            <br />
+            <br />
+            Eerst begin je met een willekeurige naam te krijgen, hierdoor wordt
+            je verbonden met een tot slaaf gemaakte.
+            <br />
+            <br />
+            Over deze persoon lees je dan de informatie die over hen beschikbaar
+            is, zoals hoe oud ze waren, wanneer ze ingeschreven waren, hun
+            inschrijfdatum, waar ze vandaan komen en andere informatie die
+            relevant is. Er wordt alleen zoveel informatie getoondt als dat er
+            beschikbaar is van de persoon zelf. Als er informatie mist wordt dat
+            duidelijk getoondt.
+            <br />
+            <br />
+            Vanuit hier kan de gebruiker gebaseerd op deze persoon verder
+            exploreren door filters waarbij ze interessante informatie kunnen
+            ontdekken. Bijvoorbeeld hoe oud mensen uit zekere landen waren,
+            welke beroepen ze hadden en op welke datum ze waren in geschreven.
+            <br />
+            <br />
+            Wanneer de installatie langer dan 1 minuut niet wordt gebruikt, gaat
+            de installatie terug naar het startscherm met de titel en de
+            verhalen.
+          </p>
+
+          <h2 className="text-2xl font-bold py-8 ">Toekomst beeld</h2>
+          <p>
+            Wij hopen dat de installatie zich blijft ontwikkelen doordat er meer
+            data bekend wordt en kan worden ingevoerd. Doordat de onbekende data
+            ook is gevisualiseerd is hier alle ruimte voor.
+          </p>
+        </div>
+      </div>
+    </div>
+
     {/* buttons */}
-    <div className="pt-4 flex">
+    <div className="pt-8 flex justify-center">
       <Link href="/screens">
-        <div className="bg-[url('/ButtonBannerScreens.png')] bg-contain bg-center bg-no-repeat w-1/3 h-60 bg-project-donker relative">
+        <div className="mr-2 bg-[url('/ButtonBannerScreens.png')] bg-contain bg-center bg-no-repeat w-1/3 h-60 bg-project-donker relative">
           <h3 className="absolute bottom-10 left-10 text-tropen-rood bg-white text-xl font-bold p-2 uppercase">
             Uitleg schermen
           </h3>
         </div>
       </Link>
-      <Link href="/designgoals">
-        <div className="bg-[url('/ButtonbannerGoals.png')] mx-4 bg-contain bg-center bg-no-repeat w-1/3 h-60 bg-project-donker relative">
-          <h3 className="absolute bottom-10 left-10 text-tropen-rood bg-white text-xl font-bold p-2 uppercase">
-            Design doelen
-          </h3>
-        </div>
-      </Link>
       <Link href="/style">
-        <div className="bg-[url('/ButtonBannerStyling.png')] bg-cover bg-center bg-no-repeat w-1/3 h-60 bg-project-donker relative">
+        <div className="ml-2 bg-[url('/ButtonBannerStyling.png')] bg-cover bg-center bg-no-repeat w-1/3 h-60 bg-project-donker relative">
           <h3 className="absolute bottom-10 left-10 text-tropen-rood bg-white text-xl font-bold p-2 uppercase">
             Styling
           </h3>
@@ -91,95 +153,50 @@ const Index2 = () => (
       </Link>
     </div>
 
-    {/* project uitleg */}
-    <div className="w-full mt-4 flex">
-      <div className="w-2/3 m-auto">
-        <div className="w-4/5 m-auto">
-          <h2 className="text-2xl font-medium pb-4">De oplossing</h2>
-          <p>
-            Wat wij uiteindelijk hebben gemaakt is Ontmoet: het verleden, een
-            interactieve museums ervaring waarbij de gebruiker het slaven
-            verleden van de voc kan ontdekken via persoonlijke verhalen van
-            mensen die tot slaaf gemaakt waren.
-            <br /> <br />
-            Met Ontmoet: het verleden kan je de persoonlijke informatie van tot
-            slaaf gemaakte mensen bekijken en de complete schaal van de slaven
-            handel van de voc bekijken door in-en-uit te zoomen, filteren en de
-            persoonlijke geschiedenis van deze mensen te lezen
-          </p>
-
-          <h2 className="text-2xl font-medium py-4">De flow</h2>
-          <p>
-            Ontmoet: het verleden is een
-            <br />
-            <br />
-            Eerst begin je met een willekeurige naam te krijgen, hierdoor wordt
-            je verbonden met een tot slaaf gemaakte.
-            <br />
-            <br />
-            Over deze persoon lees je dan de informatie die ove hun beschikbaar
-            is, zoals hoe oud ze waren, wanneer ze ingeschreven waren, hun
-            sterfdatum, waare ze vandaan komen en andere informatie die relevant
-            is, er wordt alleen zoveel informatie getoondt als dat er
-            beschikbaar is van de persoon zelf, als er informatie mist wordt dat
-            duidelijk getoondt.
-            <br />
-            <br />
-            Vanuit hier kan de gebruiker gebaseerd op deze persoon verder
-            exploreren op filters waarbij ze interessante informatie kunne
-            ontdekken, bijvoorbeeld hou oud mensen uit zekere landen waren,
-            welke beroepen ze hadden en op welke datum ze waren in geschreven.
+    <div className="pl-4 w-full">
+      {/* links */}
+      <div className="justify-center m-auto w-2/3 p-4 pt-24 flex">
+        <div className="w-1/3">
+          <h2 className="text-2xl font-bold">Bronnen</h2>
+          <p className="pt-4">
+            Hier zijn alle links te vinden naar de locaties van onze schetsen,
+            code en inspiratie.
           </p>
         </div>
-      </div>
-      <div className="pl-4 w-2/5">
-        {/* links */}
-        <div className="m-auto w-1/2 p-4 pt-24">
-          <div className="w-full">
-            <h2 className="text-2xl font-bold">Bronnen</h2>
-            <p className="pt-4">
-              Hier zijn alle links te vinden naar de locaties van onze schetsen,
-              code en inspiratie.
-            </p>
-          </div>
-          <div className="flex pt-4">
-            <a
-              className="px-2"
-              href="https://github.com/Rellor/ID_Namenmonument"
-            >
-              <Image
-                className="w-12"
-                src="/github.png"
-                alt="Picture of the author"
-                width="1500"
-                height="1500"
-              />
-            </a>
-            <a
-              className="px-2"
-              href="https://www.figma.com/file/OChXVlMBfiRqMGEc56rUUY/Namenmonument-werkbestand"
-            >
-              <Image
-                className="w-12"
-                src="/figma.png"
-                alt="Picture of the author"
-                width="1500"
-                height="1500"
-              />
-            </a>
-            <a
-              className="px-2"
-              href="https://miro.com/app/board/uXjVObENVjc=/?invite_link_id=244899130024"
-            >
-              <Image
-                className="w-12"
-                src="/miro.png"
-                alt="Picture of the author"
-                width="1500"
-                height="1500"
-              />
-            </a>
-          </div>
+        <div className="w-1/3 flex pt-4">
+          <a className="px-2" href="https://github.com/Rellor/ID_Namenmonument">
+            <Image
+              className="w-12"
+              src="/github.png"
+              alt="Picture of the author"
+              width="1500"
+              height="1500"
+            />
+          </a>
+          <a
+            className="px-2"
+            href="https://www.figma.com/file/OChXVlMBfiRqMGEc56rUUY/Namenmonument-werkbestand"
+          >
+            <Image
+              className="w-12"
+              src="/figma.png"
+              alt="Picture of the author"
+              width="1500"
+              height="1500"
+            />
+          </a>
+          <a
+            className="px-2"
+            href="https://miro.com/app/board/uXjVObENVjc=/?invite_link_id=244899130024"
+          >
+            <Image
+              className="w-12"
+              src="/miro.png"
+              alt="Picture of the author"
+              width="1500"
+              height="1500"
+            />
+          </a>
         </div>
       </div>
     </div>
