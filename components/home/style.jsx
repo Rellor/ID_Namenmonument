@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Header from "../main/nav";
+import Footer from "../main/footer";
 
 const Index = () => (
   <div className="App w-full m-auto p-4">
@@ -8,7 +9,7 @@ const Index = () => (
     {/* Titel en namen */}
     <div className="relative text-white h-128 w-full bg-cover bg-project-donker bg-center bg-[url('/ButtonbannerStyling2.png')]">
       <h1 className="uppercase text-tropen-rood bg-white p-2 left-24 bottom-36 absolute text-6xl text-center font-bold">
-        Style
+        Stijl
       </h1>
     </div>
 
@@ -76,6 +77,7 @@ const Index = () => (
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 );
 

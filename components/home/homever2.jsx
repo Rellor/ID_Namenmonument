@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Header from "../main/nav";
+import Footer from "../main/footer";
 
 const Index2 = () => (
   <div className="App w-full m-auto p-4">
@@ -189,6 +190,7 @@ const Index2 = () => (
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 );
 
