@@ -76,7 +76,7 @@ const Index = () => (
             wij zoveel mogelijk van hun willen afbeelden moesten wij een manier
             bedenken hoe zoveel stukken informatie kunnen laten zien terwijl wij
             nog steeds het geheel laten zien. Wij dachten dus eraan om beeld te
-            creeren dat de gebruiker "bijna" alles kan zien, bijvoorbeeld door
+            creeren dat de gebruiker (bijna) alles kan zien, bijvoorbeeld door
             elke individuele persoon af te beelden als 1 object, dit zou kunnen
             als een vorm, abstracte tekening of als een pixel. Deze manier van
             afbeelden werkt niet alleen om specifieke mensen te laten zien maar
