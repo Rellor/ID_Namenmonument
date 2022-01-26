@@ -15,7 +15,33 @@ const Index = () => (
 
     {/* Uitleg style */}
     <div className="w-full my-8">
+      <div className="w-1/2 m-auto pb-4">
+        <h2 className="text-2xl font-bold pb-4">Styling</h2>
+        <p>
+          Omdat <b>Ontmoet: het verleden</b> gaat over het verleden en verloren
+          geschiedenis wouden wij dit gevoel reflecteren in ons ontwerp.
+          <br />
+          <br />
+          Het kleuren palette is gebaseerd op aardelijke warme kleuren, dit
+          geeft een gevoel van menselijkheid in het ontwerp.
+          <br />
+          <br />
+          De interactieve elementen en mensen hebben een lichte kleur in
+          contrast met de donkere achtergrond, hierdoor is duidelijke te zien
+          welke delen de gebruiker kan bekijken en gebruiken.
+          <br />
+          <br />
+          De enige onderdelen die geen kleur hebben zijn de visualisaties van
+          het totale geschatte aantal van mensen dat to slaaf gemaakt was en
+          waar geen infomratie meer beshcikbaar van is. DIt deel is zwart
+          gemaakt omdat dit een heel belangrijk stuk informatie is in de context
+          van ons ontwerp en de geschiedenis, het moet een zware impact geven op
+          de gebruiker zodat duidelijk wordt gemaakt wat voor effect de slaven
+          handel had op mensen en hun geschiedenis
+        </p>
+      </div>
       {/* kleuren */}
+      <h2 className="w-1/2 text-2xl font-bold py-4 m-auto">Kleur</h2>
       <div className="w-full flex">
         <div className="font-bold uppercase w-1/5 pb-16/100 mr-2 my-4 bg-project-donker">
           <p className="text-white text-center">#1B0A08</p>
@@ -33,6 +59,7 @@ const Index = () => (
           <p className="text-white text-center">#706C68</p>
         </div>
       </div>
+      <h2 className="w-1/2 text-2xl font-bold py-4 m-auto">typografie</h2>
       <div className="w-4/5 m-auto my-8">
         <div>
           <div className="font-Koh text-6xl pb-4 font-bold flex w-full">

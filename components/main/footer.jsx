@@ -10,10 +10,7 @@ const Footer = () => (
         <p>Home</p>
       </Link>
       <Link href="/screens">
-        <p>Schermen</p>
-      </Link>
-      <Link href="/designgoals">
-        <p>Design doelen</p>
+        <p>Ontwerp uitleg</p>
       </Link>
       <Link href="/style">
         <p>Styling</p>

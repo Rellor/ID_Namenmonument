@@ -140,7 +140,7 @@ const Index2 = () => (
       <Link href="/screens">
         <div className="mr-2 bg-[url('/ButtonBannerScreens.png')] bg-contain bg-center bg-no-repeat w-1/3 h-60 bg-project-donker relative">
           <h3 className="absolute bottom-10 left-10 text-tropen-rood bg-white text-xl font-bold p-2 uppercase">
-            Uitleg schermen
+            Ontwerp uitleg
           </h3>
         </div>
       </Link>
@@ -153,9 +153,9 @@ const Index2 = () => (
       </Link>
     </div>
 
-    <div className="pl-4 w-full">
+    <div className="pt-8 justify-center">
       {/* links */}
-      <div className="justify-center m-auto w-2/3 p-4 pt-24 flex">
+      <div className="justify-center m-auto w-2/3 py-8 flex">
         <div className="w-1/3">
           <h2 className="text-2xl font-bold">Bronnen</h2>
           <p className="pt-4">
@@ -164,7 +164,10 @@ const Index2 = () => (
           </p>
         </div>
         <div className="w-1/3 flex pt-4">
-          <a className="px-2" href="https://github.com/Rellor/ID_Namenmonument">
+          <a
+            className="px-2 w-1/4"
+            href="https://github.com/Rellor/ID_Namenmonument"
+          >
             <Image
               className="w-12"
               src="/github.png"
@@ -174,7 +177,7 @@ const Index2 = () => (
             />
           </a>
           <a
-            className="px-2"
+            className="px-2  w-1/4"
             href="https://www.figma.com/file/OChXVlMBfiRqMGEc56rUUY/Namenmonument-werkbestand"
           >
             <Image
@@ -186,7 +189,7 @@ const Index2 = () => (
             />
           </a>
           <a
-            className="px-2"
+            className="px-2  w-1/4"
             href="https://miro.com/app/board/uXjVObENVjc=/?invite_link_id=244899130024"
           >
             <Image

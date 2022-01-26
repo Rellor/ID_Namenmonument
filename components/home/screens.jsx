@@ -9,7 +9,7 @@ const Index = () => (
     {/* Titel en namen */}
     <div className="relative text-white h-128 w-full bg-contain bg-top bg-norepeat bg-bottom bg-[url('/ButtonbannerScreens.png')]">
       <h1 className="uppercase text-tropen-rood bg-white p-2 left-24 bottom-36 absolute text-6xl text-center font-bold">
-        Schermen
+        ONTWERP UITLEG
       </h1>
     </div>
 
