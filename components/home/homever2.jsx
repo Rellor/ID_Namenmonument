@@ -75,7 +75,7 @@ const Index2 = () => (
     {/* buttons */}
     <div className="pt-4 flex">
       <Link href="/screens">
-        <div className="bg-[url('/ButtonbannerScreens.png')] bg-contain bg-center bg-no-repeat w-1/3 h-60 bg-project-donker relative">
+        <div className="bg-[url('/ButtonBannerScreens.png')] bg-contain bg-center bg-no-repeat w-1/3 h-60 bg-project-donker relative">
           <h3 className="absolute bottom-10 left-10 text-tropen-rood bg-white text-xl font-bold p-2 uppercase">
             Uitleg schermen
           </h3>
@@ -89,7 +89,7 @@ const Index2 = () => (
         </div>
       </Link>
       <Link href="/style">
-        <div className="bg-[url('/ButtonbannerStyling.png')] bg-cover bg-center bg-no-repeat w-1/3 h-60 bg-project-donker relative">
+        <div className="bg-[url('/ButtonBannerStyling.png')] bg-cover bg-center bg-no-repeat w-1/3 h-60 bg-project-donker relative">
           <h3 className="absolute bottom-10 left-10 text-tropen-rood bg-white text-xl font-bold p-2 uppercase">
             Styling
           </h3>
