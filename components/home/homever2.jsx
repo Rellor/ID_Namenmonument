@@ -54,20 +54,13 @@ const Index2 = () => (
       </div>
       <div className="self-center w-5/12 pl-4">
         <div className="mr-auto">
-          <Image
-            className="w-24 drop-shadow-md"
-            src="/Banner.png"
-            alt="Picture of the author"
-            width="1920"
-            height="1080"
-          />
+          <video loop width="1920" height="1080" controls>
+            <source src="/interactiefscherm.mp4" />
+          </video>
           <div className="align-bottom flex mt-2">
-            <Image
-              src="/Banner2.png"
-              alt="Picture of the author"
-              width="1920"
-              height="1080"
-            />
+            <video loop width="1920" height="1080" controls>
+              <source src="/Eindprototype.mov" />
+            </video>
           </div>
         </div>
       </div>

@@ -23,8 +23,7 @@ export const KanyeProvider = ({ children }) => {
         checked ? a.prs_naam.localeCompare(b.prs_naam) : true
       )
         .filter((d) => {
-          let output = `${d.prs_naam} ${d.ove_eigenaar} ${d.ove_datum_inschrijving} ${d.ove_eigenaar} ${d.prs_leeftijd}`;
-          console.log(output);
+          let output = `${d.prs_naam} ${d.ove_eigenaar} ${d.ove_datum_inschrijving} ${d.prs_leeftijd}`;
           let input =
             document.getElementById("searchBar") &&
             document.getElementById("searchBar").value
