@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 const Header = () => (
   <div className="h-1 w-full z-100 absolute inset-0 z-50">
