@@ -139,7 +139,7 @@ const DataBody = () => {
       />
       <label
         className="absolute top-44 px-2 rounded-lg bg-project-button"
-        for="checkboxAZ"
+        forhtmlFor="checkboxAZ"
       >
         A - Z
       </label>
